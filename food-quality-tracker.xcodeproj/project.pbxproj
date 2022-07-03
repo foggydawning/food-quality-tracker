@@ -11,6 +11,7 @@
 		D321E17A2871FFA50027272B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D321E1792871FFA50027272B /* ViewController.swift */; };
 		D321E17F2871FFA70027272B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D321E17E2871FFA70027272B /* Assets.xcassets */; };
 		D321E1822871FFA70027272B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D321E1802871FFA70027272B /* LaunchScreen.storyboard */; };
+		D34CB0752872151100A69D4D /* ListController in Frameworks */ = {isa = PBXBuildFile; productRef = D34CB0742872151100A69D4D /* ListController */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34CB0752872151100A69D4D /* ListController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +121,9 @@
 			dependencies = (
 			);
 			name = "food-quality-tracker";
+			packageProductDependencies = (
+				D34CB0742872151100A69D4D /* ListController */,
+			);
 			productName = "food-quality-tracker";
 			productReference = D321E1722871FFA50027272B /* food-quality-tracker.app */;
 			productType = "com.apple.product-type.application";
@@ -148,6 +153,9 @@
 				ru,
 			);
 			mainGroup = D321E1692871FFA50027272B;
+			packageReferences = (
+				D34CB0732872151100A69D4D /* XCRemoteSwiftPackageReference "ListController" */,
+			);
 			productRefGroup = D321E1732871FFA50027272B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -318,6 +326,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D34CB0732872151100A69D4D /* XCRemoteSwiftPackageReference "ListController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MobileUpLLC/ListController";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D34CB0742872151100A69D4D /* ListController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D34CB0732872151100A69D4D /* XCRemoteSwiftPackageReference "ListController" */;
+			productName = ListController;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D321E16A2871FFA50027272B /* Project object */;
 }
