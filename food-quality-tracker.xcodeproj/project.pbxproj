@@ -109,6 +109,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D321E1862871FFA70027272B /* Build configuration list for PBXNativeTarget "food-quality-tracker" */;
 			buildPhases = (
+				D33C6FD128721254007CA9D0 /* SwiftLint */,
 				D321E16E2871FFA50027272B /* Sources */,
 				D321E16F2871FFA50027272B /* Frameworks */,
 				D321E1702871FFA50027272B /* Resources */,
@@ -167,6 +168,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D33C6FD128721254007CA9D0 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint > /dev/null; then\n  swiftlint --config swiftlint.yml\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D321E16E2871FFA50027272B /* Sources */ = {

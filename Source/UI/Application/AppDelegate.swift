@@ -9,7 +9,7 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
+
     lazy var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
 
     func application(
@@ -18,10 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ) -> Bool {
         let viewController = ViewController()
         let navigationViewController = UINavigationController(rootViewController: viewController)
-        
+
         window?.rootViewController = navigationViewController
         window?.makeKeyAndVisible()
-        
+
         return true
     }
 }
