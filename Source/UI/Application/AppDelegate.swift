@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import Route
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     lazy var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
+    lazy var router = Router(window: window)
 
     func application(
         _ application: UIApplication,
@@ -19,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let viewController = ViewController()
         let navigationViewController = UINavigationController(rootViewController: viewController)
 
-        window?.rootViewController = navigationViewController
+        router.setWindowRoot(navigationViewController, animated: false)
         window?.makeKeyAndVisible()
 
         return true

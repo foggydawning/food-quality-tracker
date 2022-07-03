@@ -13,6 +13,7 @@
 		D321E1822871FFA70027272B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D321E1802871FFA70027272B /* LaunchScreen.storyboard */; };
 		D34CB0752872151100A69D4D /* ListController in Frameworks */ = {isa = PBXBuildFile; productRef = D34CB0742872151100A69D4D /* ListController */; };
 		D34CB0782872164C00A69D4D /* Route in Frameworks */ = {isa = PBXBuildFile; productRef = D34CB0772872164C00A69D4D /* Route */; };
+		D34CB07B287216AC00A69D4D /* UIViewController+Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34CB07A287216AC00A69D4D /* UIViewController+Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		D321E1812871FFA70027272B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D321E1832871FFA70027272B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D321E18A287203BB0027272B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D34CB07A287216AC00A69D4D /* UIViewController+Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Router.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				D321E18D28720C1D0027272B /* Application */,
+				D34CB0792872168000A69D4D /* Extensions */,
 				D321E18F28720C460027272B /* Resources */,
 				D321E18E28720C370027272B /* ViewControllers */,
 			);
@@ -104,6 +107,14 @@
 				D321E1832871FFA70027272B /* Info.plist */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		D34CB0792872168000A69D4D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D34CB07A287216AC00A69D4D /* UIViewController+Router.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D321E17A2871FFA50027272B /* ViewController.swift in Sources */,
+				D34CB07B287216AC00A69D4D /* UIViewController+Router.swift in Sources */,
 				D321E1762871FFA50027272B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
